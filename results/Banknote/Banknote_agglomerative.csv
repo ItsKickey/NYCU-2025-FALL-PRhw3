@@ -1,0 +1,4 @@
+dataset,algorithm,param,value,n_clusters,silhouette,db_index
+Banknote,agglomerative,linkage,ward,2,0.3130411761286322,1.2269935251646533
+Banknote,agglomerative,linkage,complete,2,0.3844708207332474,0.7530891027699771
+Banknote,agglomerative,linkage,average,2,0.36002438597189784,0.9118514778764144

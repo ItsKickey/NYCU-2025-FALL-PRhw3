@@ -1,0 +1,4 @@
+dataset,algorithm,param,value,n_clusters,silhouette,db_index
+Banknote,dbscan,eps,0.3,46,0.13704347072376918,1.1723215908008946
+Banknote,dbscan,eps,0.5,8,-0.037453903321425154,1.1473564904777291
+Banknote,dbscan,eps,0.7,4,0.01957009875506038,0.7947321623604247

@@ -1,0 +1,4 @@
+dataset,algorithm,param,value,n_clusters,silhouette,db_index
+Wine,spectral,n_neighbors,10,3,0.2828499553125854,1.3907413947652447
+Wine,spectral,n_neighbors,20,3,0.28508806217796906,1.3878403233490062
+Wine,spectral,n_neighbors,30,3,0.2837930570737434,1.391776873649943

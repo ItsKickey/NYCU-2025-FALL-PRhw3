@@ -1,0 +1,4 @@
+dataset,algorithm,param,value,n_clusters,silhouette,db_index
+Moons,kmeans,n_clusters,2,2,0.49499311065045715,0.808730058012523
+Moons,kmeans,n_clusters,3,3,0.44739178551405795,0.8829643571554818
+Moons,kmeans,n_clusters,4,4,0.43517099083528327,0.921076750684583

@@ -1,0 +1,5 @@
+dataset,algorithm,param,value,n_clusters,silhouette,db_index
+Wine,kmeans,n_clusters,2,2,0.26831340971052126,1.4482356342193663
+Wine,kmeans,n_clusters,3,3,0.2848589191898987,1.3891879777181648
+Wine,kmeans,n_clusters,4,4,0.28600619989964626,1.4903065570142071
+Wine,kmeans,n_clusters,5,5,0.24519973266140904,1.6851414365792927

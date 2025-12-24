@@ -1,0 +1,4 @@
+dataset,algorithm,param,value,n_clusters,silhouette,db_index
+Moons,gmm,covariance_type,spherical,2,0.49499311065045715,0.808730058012523
+Moons,gmm,covariance_type,diag,2,0.49508272572612727,0.8084889750127341
+Moons,gmm,covariance_type,full,2,0.49500124576178556,0.808464523650592

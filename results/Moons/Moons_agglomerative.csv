@@ -1,0 +1,4 @@
+dataset,algorithm,param,value,n_clusters,silhouette,db_index
+Moons,agglomerative,linkage,single,2,0.3826421764045932,1.0317113959355486
+Moons,agglomerative,linkage,complete,2,0.4848321995932809,0.8157176206454435
+Moons,agglomerative,linkage,ward,2,0.458966523451508,0.850776478651878

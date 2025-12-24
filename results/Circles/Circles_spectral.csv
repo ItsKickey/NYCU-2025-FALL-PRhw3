@@ -1,0 +1,4 @@
+dataset,algorithm,param,value,n_clusters,silhouette,db_index
+Circles,spectral,n_neighbors,5,2,0.10918682688551246,123.43468854860792
+Circles,spectral,n_neighbors,10,2,0.10918682688551246,123.43468854860792
+Circles,spectral,n_neighbors,20,2,0.10918682688551246,123.43468854860792

@@ -1,0 +1,4 @@
+dataset,algorithm,param,value,n_clusters,silhouette,db_index
+Wine,dbscan,eps,0.3,0,,
+Wine,dbscan,eps,0.5,0,,
+Wine,dbscan,eps,0.7,0,,

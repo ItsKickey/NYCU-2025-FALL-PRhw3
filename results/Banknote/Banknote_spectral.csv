@@ -1,0 +1,4 @@
+dataset,algorithm,param,value,n_clusters,silhouette,db_index
+Banknote,spectral,n_neighbors,10,2,0.3166659724274588,0.5861852311005815
+Banknote,spectral,n_neighbors,20,2,0.3000267718705914,1.1952778805054025
+Banknote,spectral,n_neighbors,30,2,0.32161989516074957,1.1391685140970378

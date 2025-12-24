@@ -1,0 +1,4 @@
+dataset,algorithm,param,value,n_clusters,silhouette,db_index
+Car,kmeans,n_clusters,2,2,0.13141732814972085,2.5114257066885903
+Car,kmeans,n_clusters,3,3,0.1212176773493162,2.27117518502544
+Car,kmeans,n_clusters,4,4,0.11484769756473262,2.1330254642604656

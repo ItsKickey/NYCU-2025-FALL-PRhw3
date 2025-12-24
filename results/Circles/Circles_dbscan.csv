@@ -1,0 +1,4 @@
+dataset,algorithm,param,value,n_clusters,silhouette,db_index
+Circles,dbscan,eps,0.1,9,-0.34246185486688696,1.6428447275424307
+Circles,dbscan,eps,0.2,16,0.022173961293024423,1.34699665355097
+Circles,dbscan,eps,0.3,2,-0.0045422141312955865,61.30747079795856

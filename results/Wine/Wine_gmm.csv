@@ -1,0 +1,3 @@
+dataset,algorithm,param,value,n_clusters,silhouette,db_index
+Wine,gmm,covariance_type,diag,3,0.28063956408299895,1.416117027450109
+Wine,gmm,covariance_type,full,3,0.2848589191898987,1.3891879777181648

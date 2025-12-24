@@ -1,0 +1,4 @@
+dataset,algorithm,param,value,n_clusters,silhouette,db_index
+Circles,agglomerative,linkage,single,2,0.10918682688551246,123.43468854860792
+Circles,agglomerative,linkage,complete,2,0.3433194717749019,1.20338520165003
+Circles,agglomerative,linkage,ward,2,0.33376853793345407,1.2077553116136721

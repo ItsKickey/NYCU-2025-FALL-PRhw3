@@ -1,0 +1,4 @@
+dataset,algorithm,param,value,n_clusters,silhouette,db_index
+Car,spectral,n_neighbors,10,2,0.11657511495603455,2.6857675347455157
+Car,spectral,n_neighbors,20,2,0.1249162832030681,2.5500527605361674
+Car,spectral,n_neighbors,30,2,0.1314173281497211,2.5114257066885775

@@ -1,0 +1,4 @@
+dataset,algorithm,param,value,n_clusters,silhouette,db_index
+Moons,spectral,n_neighbors,5,2,0.01728379548833295,2.715546810301926
+Moons,spectral,n_neighbors,10,2,0.3826421764045932,1.0317113959355486
+Moons,spectral,n_neighbors,20,2,0.3881166628848694,1.0173162924148609

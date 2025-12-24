@@ -1,0 +1,217 @@
+{
+  "Moons": {
+    "kmeans": {
+      "param": "n_clusters",
+      "values": [2, 3, 4],
+      "fixed": {}
+    },
+    "agglomerative": {
+      "param": "linkage",
+      "values": ["single", "complete", "ward"],
+      "fixed": {
+        "n_clusters": 2
+      }
+    },
+    "dbscan": {
+      "param": "eps",
+      "values": [0.1, 0.2, 0.3],
+      "fixed": {
+        "min_samples": 5
+      }
+    },
+    "gmm": {
+      "param": "covariance_type",
+      "values": ["spherical", "diag", "full"],
+      "fixed": {
+        "n_components": 2
+      }
+    },
+    "spectral": {
+      "param": "n_neighbors",
+      "values": [5, 10, 20],
+      "fixed": {
+        "n_clusters": 2
+      }
+    }
+  },
+
+  "Circles": {
+    "kmeans": {
+      "param": "n_clusters",
+      "values": [2, 3, 4],
+      "fixed": {}
+    },
+    "agglomerative": {
+      "param": "linkage",
+      "values": ["single", "complete", "ward"],
+      "fixed": {
+        "n_clusters": 2
+      }
+    },
+    "dbscan": {
+      "param": "eps",
+      "values": [0.1, 0.2, 0.3],
+      "fixed": {
+        "min_samples": 5
+      }
+    },
+    "gmm": {
+      "param": "covariance_type",
+      "values": ["spherical", "diag", "full"],
+      "fixed": {
+        "n_components": 2
+      }
+    },
+    "spectral": {
+      "param": "n_neighbors",
+      "values": [5, 10, 20],
+      "fixed": {
+        "n_clusters": 2
+      }
+    }
+  },
+
+  "Wine": {
+    "kmeans": {
+      "param": "n_clusters",
+      "values": [2, 3, 4, 5],
+      "fixed": {}
+    },
+    "agglomerative": {
+      "param": "linkage",
+      "values": ["ward", "complete", "average"],
+      "fixed": {
+        "n_clusters": 3
+      }
+    },
+    "dbscan": {
+      "param": "eps",
+      "values": [0.3, 0.5, 0.7],
+      "fixed": {
+        "min_samples": 5
+      }
+    },
+    "gmm": {
+      "param": "covariance_type",
+      "values": ["diag", "full"],
+      "fixed": {
+        "n_components": 3
+      }
+    },
+    "spectral": {
+      "param": "n_neighbors",
+      "values": [10, 20, 30],
+      "fixed": {
+        "n_clusters": 3
+      }
+    }
+  },
+
+  "Banknote": {
+    "kmeans": {
+      "param": "n_clusters",
+      "values": [2, 3, 4],
+      "fixed": {}
+    },
+    "agglomerative": {
+      "param": "linkage",
+      "values": ["ward", "complete", "average"],
+      "fixed": {
+        "n_clusters": 2
+      }
+    },
+    "dbscan": {
+      "param": "eps",
+      "values": [0.3, 0.5, 0.7],
+      "fixed": {
+        "min_samples": 5
+      }
+    },
+    "gmm": {
+      "param": "covariance_type",
+      "values": ["diag", "full"],
+      "fixed": {
+        "n_components": 2
+      }
+    },
+    "spectral": {
+      "param": "n_neighbors",
+      "values": [10, 20, 30],
+      "fixed": {
+        "n_clusters": 2
+      }
+    }
+  },
+
+  "Heart": {
+    "kmeans": {
+      "param": "n_clusters",
+      "values": [2, 3, 4],
+      "fixed": {}
+    },
+    "agglomerative": {
+      "param": "linkage",
+      "values": ["ward", "complete", "average"],
+      "fixed": {
+        "n_clusters": 2
+      }
+    },
+    "dbscan": {
+      "param": "eps",
+      "values": [0.5, 0.7, 1.0],
+      "fixed": {
+        "min_samples": 5
+      }
+    },
+    "gmm": {
+      "param": "covariance_type",
+      "values": ["diag", "full"],
+      "fixed": {
+        "n_components": 2
+      }
+    },
+    "spectral": {
+      "param": "n_neighbors",
+      "values": [10, 20, 30],
+      "fixed": {
+        "n_clusters": 2
+      }
+    }
+  },
+
+  "Car": {
+    "kmeans": {
+      "param": "n_clusters",
+      "values": [2, 3, 4],
+      "fixed": {}
+    },
+    "agglomerative": {
+      "param": "linkage",
+      "values": ["complete", "average"],
+      "fixed": {
+        "n_clusters": 2
+      }
+    },
+    "dbscan": {
+      "param": "eps",
+      "values": [0.5, 0.7, 1.0],
+      "fixed": {
+        "min_samples": 5
+      }
+    },
+    "gmm": {
+      "param": "covariance_type",
+      "values": ["diag", "full"],
+      "fixed": {
+        "n_components": 2
+      }
+    },
+    "spectral": {
+      "param": "n_neighbors",
+      "values": [10, 20, 30],
+      "fixed": {
+        "n_clusters": 2
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+dataset,algorithm,param,value,n_clusters,silhouette,db_index
+Circles,gmm,covariance_type,spherical,2,0.3436485532522889,1.2026275235435409
+Circles,gmm,covariance_type,diag,2,0.34798380183681993,1.1913670694379088
+Circles,gmm,covariance_type,full,2,0.34548433092009867,1.2036552096243425

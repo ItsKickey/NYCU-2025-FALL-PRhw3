@@ -1,0 +1,4 @@
+dataset,algorithm,param,value,n_clusters,silhouette,db_index
+Heart,spectral,n_neighbors,10,2,0.15701313042717033,2.2209485156795887
+Heart,spectral,n_neighbors,20,2,0.16311120901819937,2.15452564181275
+Heart,spectral,n_neighbors,30,2,0.1662199562754337,2.127717210984586

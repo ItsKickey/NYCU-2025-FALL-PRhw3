@@ -1,0 +1,4 @@
+dataset,algorithm,param,value,n_clusters,silhouette,db_index
+Moons,dbscan,eps,0.1,27,0.08936369753396414,1.1230243278877596
+Moons,dbscan,eps,0.2,2,0.20639275949560945,2.324158437905839
+Moons,dbscan,eps,0.3,2,0.3826421764045932,1.0317113959355486
