@@ -1,4 +1,4 @@
-dataset,algorithm,param,value,n_clusters,silhouette,db_index
-Wine,agglomerative,linkage,ward,3,0.2774439826952265,1.4185919431857326
-Wine,agglomerative,linkage,complete,3,0.20378689690677748,1.8960960515907337
-Wine,agglomerative,linkage,average,3,0.15752526243774145,1.0298902169850324
+dataset,algorithm,param,value,n_clusters,silhouette,db_index,ari,nmi
+Wine,agglomerative,linkage,ward,3,0.2774439826952265,1.4185919431857326,0.7899332213582837,0.7864652657004837
+Wine,agglomerative,linkage,complete,3,0.20378689690677748,1.8960960515907337,0.5771435822032458,0.614377706410346
+Wine,agglomerative,linkage,average,3,0.15752526243774145,1.0298902169850324,-0.005441973296580639,0.018440033486976225

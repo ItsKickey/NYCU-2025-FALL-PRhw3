@@ -1,6 +1,7 @@
 import csv
 from datasets.preprocess import load_dataset
 from metrics.internal import compute_internal_metrics
+from metrics.external import compute_external_metrics
 import os
 from algorithms import kmeans, agglomerative, dbscan, gmm, spectral
 import json
@@ -20,8 +21,12 @@ ALGORITHMS = {
 
 def run_dataset(dataset_name):
     os.makedirs("results", exist_ok=True)
-
-    X = load_dataset(dataset_name, scale=True, ignore_label=True)
+    toy = True
+    if dataset_name in ['Moons','Circles']:
+        X = load_dataset(dataset_name, scale=True, ignore_label=True)
+    else :
+        X, y = load_dataset(dataset_name, scale=True, ignore_label=False)
+        toy = False
 
     for algo_name, algo in ALGORITHMS.items():
         sweep = SWEEP_TABLE[dataset_name][algo_name]
@@ -30,11 +35,13 @@ def run_dataset(dataset_name):
         out_path = f"results/{dataset_name}/{dataset_name}_{algo_name}.csv"
         with open(out_path, "w", newline="") as f:
             writer = csv.writer(f)
-            writer.writerow([
-                "dataset", "algorithm",
+            titleRow=["dataset", "algorithm",
                 "param", "value",
-                "n_clusters", "silhouette", "db_index"
-            ])
+                "n_clusters", "silhouette", "db_index"]
+            if not toy:
+                titleRow +=["ari","nmi"]
+
+            writer.writerow(titleRow)
 
             for v in sweep["values"]:
                 params = dict(sweep["fixed"])
@@ -43,13 +50,19 @@ def run_dataset(dataset_name):
                 labels = algo.run(X, params)
                 scores = compute_internal_metrics(X, labels)
 
-                writer.writerow([
-                    dataset_name, algo_name,
-                    sweep["param"], v,
-                    scores["n_clusters"],
-                    scores["silhouette"],
-                    scores["db_index"]
-                ])
+                dataRow =[dataset_name, algo_name,
+                        sweep["param"], v,
+                        scores["n_clusters"],
+                        scores["silhouette"],
+                        scores["db_index"]
+                    ]
+                if not toy:
+                    external = compute_external_metrics(y, labels)
+                    dataRow+=[external["ari"],external["nmi"]]
+                
+                writer.writerow(dataRow)
+                
+
 
 
 if __name__ == "__main__":

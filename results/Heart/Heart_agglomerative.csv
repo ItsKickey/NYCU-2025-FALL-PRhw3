@@ -1,4 +1,4 @@
-dataset,algorithm,param,value,n_clusters,silhouette,db_index
-Heart,agglomerative,linkage,ward,2,0.13171533189500462,2.602753047230441
-Heart,agglomerative,linkage,complete,2,0.34532426483393164,0.5148098486330908
-Heart,agglomerative,linkage,average,2,0.34532426483393164,0.5148098486330908
+dataset,algorithm,param,value,n_clusters,silhouette,db_index,ari,nmi
+Heart,agglomerative,linkage,ward,2,0.13171533189500462,2.602753047230441,0.13173622926485623,0.0966734368097006
+Heart,agglomerative,linkage,complete,2,0.34532426483393164,0.5148098486330908,-0.0009679789729531131,0.005858347831501538
+Heart,agglomerative,linkage,average,2,0.34532426483393164,0.5148098486330908,-0.0009679789729531131,0.005858347831501538
